@@ -8,18 +8,22 @@
 
 import UIKit
 
-class ViewController: UITableViewController {
+@IBDesignable class ViewController: UITableViewController {
 
     let imageName = ["1", "2", "3", "4", "5", "6", "7", "8"]
     let imageWidth = [1920, 1920, 1920, 1920, 1920, 1920, 1920, 1280]
     let imageHeight = [960, 1220, 1280, 1334, 1280, 1280, 1032, 720]
     
+    // default cell gap height
+    @IBInspectable var cellGapHeight: CGFloat = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        //remove cell bottom border
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.none
         
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 300
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,8 +50,10 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let ratio = CGFloat(imageWidth[indexPath.row]) / tableView.frame.width
         
-        return CGFloat(imageHeight[indexPath.row]) / ratio
+        return (CGFloat(imageHeight[indexPath.row]) / ratio) + cellGapHeight
     }
+    
+    
     
 }
 

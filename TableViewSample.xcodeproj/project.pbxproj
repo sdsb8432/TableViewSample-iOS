@@ -13,6 +13,7 @@
 		F51AE9C21F25A9DA002380D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51AE9C11F25A9DA002380D1 /* Assets.xcassets */; };
 		F51AE9C51F25A9DA002380D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51AE9C31F25A9DA002380D1 /* LaunchScreen.storyboard */; };
 		F51AE9CD1F25AD5D002380D1 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51AE9CC1F25AD5D002380D1 /* FirstTableViewCell.swift */; };
+		F51AE9CF1F25C1A9002380D1 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51AE9CE1F25C1A9002380D1 /* SecondTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F51AE9C41F25A9DA002380D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F51AE9C61F25A9DA002380D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51AE9CC1F25AD5D002380D1 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		F51AE9CE1F25C1A9002380D1 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				F51AE9BA1F25A9DA002380D1 /* AppDelegate.swift */,
 				F51AE9BC1F25A9DA002380D1 /* ViewController.swift */,
+				F51AE9CE1F25C1A9002380D1 /* SecondTableViewCell.swift */,
 				F51AE9CC1F25AD5D002380D1 /* FirstTableViewCell.swift */,
 				F51AE9BE1F25A9DA002380D1 /* Main.storyboard */,
 				F51AE9C11F25A9DA002380D1 /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 				F51AE9CD1F25AD5D002380D1 /* FirstTableViewCell.swift in Sources */,
 				F51AE9BD1F25A9DA002380D1 /* ViewController.swift in Sources */,
 				F51AE9BB1F25A9DA002380D1 /* AppDelegate.swift in Sources */,
+				F51AE9CF1F25C1A9002380D1 /* SecondTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
